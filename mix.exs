@@ -19,7 +19,8 @@ defmodule Exswift.Mixfile do
     [
       {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
       {:httpotion, "~> 0.2.0"},
-      {:mock, github: "jjh42/mock", tag: "v0.0.3"}
+      {:jsex, github: "talentdeficit/jsex"},
+      {:mock, github: "jjh42/mock"}
     ]
   end
 end
