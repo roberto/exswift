@@ -18,13 +18,23 @@ defmodule Exswift.AuthTest do
     assert called HTTPotion.get(@auth_url)
   end
 
-  test_with_mock "connect returns an access record", HTTPotion, [get: fn(_url) -> auth_response end] do
+  test_with_mock "auth returns an access record", HTTPotion, [get: fn(_url) -> auth_response end] do
     Auth.auth(@auth_url)
     assert Record.is_record(Auth.auth(@auth_url), :access)
   end
 
-  test_with_mock "connect returns access with token", HTTPotion, [get: fn(_url) -> auth_response end] do
+  test_with_mock "auth returns access with token", HTTPotion, [get: fn(_url) -> auth_response end] do
     access = Auth.auth(@auth_url)
     assert "token-id" = Auth.access(access, :token)
+  end
+
+  test_with_mock "auth returns access with public url", HTTPotion, [get: fn(_url) -> auth_response end] do
+    access = Auth.auth(@auth_url)
+    assert "http://public-url-com/" = Auth.access(access, :public_url)
+  end
+
+  test_with_mock "auth returns access with admin url", HTTPotion, [get: fn(_url) -> auth_response end] do
+    access = Auth.auth(@auth_url)
+    assert "http://api-url-com/" = Auth.access(access, :admin_url)
   end
 end
