@@ -6,7 +6,5 @@ Swift client for Elixir (in development). Based on [NightCrawler Swift](https://
 Usage
 -----
 
-    access = ExSwift.auth "http://auth-url.com/"
-
-    access |> ExSwift.create_container "books"
-
+    access = ExSwift.Auth.auth "http://auth-url.com/"
+    books = access |> ExSwift.Container.list "library-container"
