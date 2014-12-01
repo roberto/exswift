@@ -4,7 +4,7 @@ defmodule Exswift.Mixfile do
   def project do
     [app: :exswift,
      version: "0.0.1",
-     elixir: "~> 1.0.0-rc1",
+     elixir: "~> 1.0.0",
      deps: deps]
   end
 
@@ -17,9 +17,9 @@ defmodule Exswift.Mixfile do
 
   defp deps do
     [
-      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
+      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.1"},
       {:httpotion, "~> 0.2.0"},
-      {:jsex, github: "talentdeficit/jsex"},
+      {:exjsx, github: "talentdeficit/exjsx"},
       {:mock, github: "jjh42/mock"}
     ]
   end

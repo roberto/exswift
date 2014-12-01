@@ -1,6 +1,6 @@
-%{"httpotion": {:package, "0.2.4"},
-  "ibrowse": {:git, "git://github.com/cmullaparthi/ibrowse.git", "7871e2ebe8811efb64e1917e2de455fa87e8dfe3", [tag: "v4.1.0"]},
-  "jsex": {:git, "git://github.com/talentdeficit/jsex.git", "e2ddb78ac6b1782da5da1a182c7c70a9c51f1467", []},
-  "jsx": {:package, "2.1.1"},
-  "meck": {:git, "git://github.com/eproxus/meck.git", "dde759050eff19a1a80fd854d7375174b191665d", [tag: "0.8.2"]},
-  "mock": {:git, "git://github.com/jjh42/mock.git", "275109db347caf3449b6d123bd4da720fb08b28e", []}}
+%{"exjsx": {:git, "git://github.com/talentdeficit/exjsx.git", "d8fcc5f55bdcb8ea41e5688d3b2288ae783c3a02", []},
+  "httpotion": {:hex, :httpotion, "0.2.4"},
+  "ibrowse": {:git, "git://github.com/cmullaparthi/ibrowse.git", "d2e369ff42666c3574b8b7ec26f69027895c4d94", [tag: "v4.1.1"]},
+  "jsx": {:hex, :jsx, "2.2.0"},
+  "meck": {:hex, :meck, "0.8.2"},
+  "mock": {:git, "git://github.com/jjh42/mock.git", "5d643b66da59e986d656d0f5e6dff789321da4ef", []}}

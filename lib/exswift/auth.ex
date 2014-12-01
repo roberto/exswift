@@ -11,7 +11,7 @@ defmodule Exswift.Auth do
 
   def auth auth_url do
     response = HTTPotion.get(auth_url)
-    {:ok, json_response} = JSEX.decode(response)
+    {:ok, json_response} = JSX.decode(response)
     extract_data(json_response["access"])
   end
 

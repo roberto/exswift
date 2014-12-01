@@ -6,7 +6,7 @@ defmodule Exswift.Container do
 
   def list Auth.access(admin_url: admin_url), container do
     response = HTTPotion.get(admin_url <> container)
-    {:ok, json_response} = JSEX.decode(response)
+    {:ok, json_response} = JSX.decode(response)
     json_response
   end
 end
